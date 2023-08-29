@@ -1,0 +1,85 @@
+
+.navbar{
+    background-color: #063b45;
+}
+.branding {
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+.navbar2{
+    background-color: #063b45!important;
+}
+.logo-content {
+    display: inline;
+    
+}
+.logo-type {
+    padding-left: 30px;
+    color: aliceblue;
+}
+
+.weather-body{
+background-image:url(../images/android_weather_app.webp); 
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+
+}
+#search-input{
+    width: 500px;
+    background-color: #0b272ea6;
+    margin: auto;
+    padding: 20px;
+    margin-block: 30px;
+    height: 40px;
+    
+}
+ input {
+   
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+
+}
+
+  input::placeholder{
+    color: rgb(176, 175, 175) !important;
+  
+}
+.form-control{
+    color: rgb(203, 204, 206) !important;
+}
+
+.card1 , .card2 , .card3{
+    margin: auto;
+    margin-left:30px ;
+    border: #1E202B;
+    width: 20px;
+    align-content: center !important;
+    color: azure;
+    height: 370px;
+  
+}
+.card-header , .day-and-date{
+    background-color: #0b272ea6;
+    padding: 10px;
+    color: #adadb0;
+    font-size: large;
+}
+.card1 ,.card2 ,.card3 {
+    background-color: #1b434cca;
+}
+
+.card-body{
+    padding: 10px;
+}
+#date-day{
+    padding-left: 100px;
+}
+
+.card-body_next{
+   margin-left: 100px ;
+   margin-top: 0 !important;
+}

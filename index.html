@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+    <section class="weather-body">
+        <div id="home">
+            <div class="navbar">
+                <div class="container">
+                    <div class="logo  ">
+                        <div class="logo-content px-4 ">
+                            <a class='branding' href='/'>
+                                <img src="./images/logo@2x.png" alt="logo" class="logo" width="64" height="38">
+                        </div>
+                        <div class="logo-type ">
+                            <h1 class="site-title">Weather</h1>
+                            <small class="site-description">tagline goes here</small>
+                        </div>
+                        </a>
+                    </div>
+                    <nav class="navbar2 navbar-expand-lg navbar-dark bg-dark w-50">
+                        <div class="container-fluid">
+                            <!-- Toggle button -->
+                            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="collapse navbar-collapse   " id="navbarRightAlignExample">
+                                <ul class="navbar-nav  mb-lg-0 mx-5  px-4">
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link" href="#">Live Cameras</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link" href="#">Photos</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container w-100 py-5">
+            <div class="search-component d-flex">
+                <input type="text" class="rounded-4 form-control" placeholder="Find your location..." id="search-input">
+            </div>
+            <div class=" cards my-4 d-flex ">
+                <div class="card1 w-25">
+                    <div class="card-header d-flex">
+                        <h2 id="today">Sturday </h2>
+                        
+                        <h2 id="today-date"> 6 April</h2>
+                    </div>
+                    <div class="card-body">
+                        <p id="location"></p>
+                        <div class="d-flex justify-content-between my-5">
+                            <div class="pt-3">
+                                <h2 id="today-degree" class="d-inline-block fs-1 fw-bolder"></h2>
+                                <h2 class="d-inline-block  p-2"> <sup>o</sup>C</h2>
+                            </div>
+                            <img id="today-icon" width="90" src="./images/113 (1).png" alt="icon weather">
+                        </div>
+                        <p id="today-description"> </p>
+                        <div class="details p-2">
+                            <i class="fas fa-umbrella pr-1 p-2"></i>
+                            <span id="humidity"></span> <span>%</span>
+                            <i class="fas fa-wind pl-4 p-2"> </i>
+                            <span id="wind"></span> <span>km/h</span>
+                            <i class="far fa-compass pl-3 pr-1 p-2"></i>
+                            <span id="compass"></span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- next days -->
+
+                <div class="card2 w-25 ">
+                    <div class="day-and-date">
+                        <h2 class="nextDay">Wednesday</h2>
+                    </div>
+                    <div class="card-body_next align-content-center align-items-center ">
+                        <div>
+                            <img class="nextDay-icon" width="90" alt="icon for next day" />
+                        </div>
+                        <h2 class="max-degree d-inline-block"></h2>
+                        <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                        <br>
+                        <p class="min-degree d-inline-block"></p>
+                        <p class="d-inline-block"><sup>o</sup>C</p>
+                        <p class="nextDay-description"></p>
+                    </div>
+                </div>
+
+
+
+                <div class="card3 w-25 ">
+                    <div class="day-and-date ">
+                        <h2 class="nextDay">Thursday</h2>
+                    </div>
+                    <div class="card-body_next">
+                        <div>
+                            <img class="nextDay-icon" alt="icon for next day" width="90">
+                        </div>
+                        <h2 class="max-degree d-inline-block"></h2>
+                        <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                        <br>
+                        <p class="min-degree d-inline-block"></p>
+                        <p class="d-inline-block"><sup>o</sup>C</p>
+                        <p class="nextDay-description"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./JS/script..js"></script>
+</body>
+
+</html>
